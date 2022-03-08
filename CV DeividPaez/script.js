@@ -25,6 +25,7 @@ let d = document,
     $hamburguesa.lastElementChild.classList.add("none");
     $menuNav.classList.remove("is-active");
   });
+  
 })(d);
 
 // **************ModalWindow*****************
@@ -115,7 +116,13 @@ for (const el of closeEls) {
   const $form = d.querySelector(".contact-form"),
     $loader = d.querySelector(".contact-form-loader"),
     $response = d.querySelector(".contact-form-response"),
-    $modal3 = d.querySelector("#modal3");
+    $modal3 = d.querySelector("#modal3"),
+    $CV = D.querySelector("#CVdowload");
+$CV.addEventListener("click", (e) =>{
+  e.preventDefault();
+  alert("hola")
+})
+
 
   $form.addEventListener("submit", (e) => {
     $loader.classList.remove("none");
