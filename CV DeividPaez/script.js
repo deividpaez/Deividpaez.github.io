@@ -95,6 +95,8 @@ for (const el of closeEls) {
     } else {
       $submit.classList.add("not-allowed");
     }
+
+
     let expretext = new RegExp(/[A-Z][a-zA-Z]/);
     if (expretext.test($textarea.value)) {
       $textarea.classList.add("invalid");
@@ -104,7 +106,11 @@ for (const el of closeEls) {
       $textarea.classList.remove("invalid");
       $textarea.classList.add("valid");
     }
+    if(touchDevice = ('ontouchstart' in document.documentElement)){
+      $submit.classList.remove("not-allowed");
+    }
   });
+
 
   const $form = d.querySelector(".contact-form"),
     $loader = d.querySelector(".contact-form-loader"),
@@ -130,7 +136,6 @@ for (const el of closeEls) {
     })
       .then((res) => (res.ok ? res.json() : Promise.reject(res)))
       .then((data) => {
-        console.log(data);
         $form.reset();
       })
       .catch((err) => {
