@@ -1,9 +1,4 @@
-# Portafolio
+# Hoja de vida Portafolio
+Proyecto con HTML5, CSS, vanilla JS
 
 
-Landing Page de mi Hoja de vida U portafolio
-
-# Proyecto
-
-
-[Landing Page de tipo Portafolio ]
