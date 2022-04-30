@@ -117,7 +117,7 @@ for (const el of closeEls) {
     $loader = d.querySelector(".contact-form-loader"),
     $response = d.querySelector(".contact-form-response"),
     $modal3 = d.querySelector("#modal3"),
-    $CV = D.querySelector("#CVdowload");
+    $CV = d.querySelector("#CVdowload");
 $CV.addEventListener("click", (e) =>{
   e.preventDefault();
   alert("hola")
