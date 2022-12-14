@@ -419,7 +419,10 @@ padding-left: 0.5rem;
   cursor: pointer;
   transition: font-size 2s ease;
 }
-
+.center{
+  margin-right: auto;
+  margin-left: auto;
+}
 @keyframes animacionHeroImage {
   0% {
     transform: translateX(55%);
